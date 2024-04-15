@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Hello Input</title>
+</head>
+<body>
+    <h1>Python Hello Input</h1>
+
+    <input type="number" id="operandOne" placeholder="Enter a number">
+
+    <button onclick="getValue()">Get Value</button>
+
+    <div id="total"></div>
+
+    <script>
+        function getValue() {
+            var inputBox = document.getElementById("operandOne");
+            var operandOne = parseFloat(inputBox.value);
+
+            var result = document.getElementById("total");
+            result.innerHTML = "Hello! The input says: " + operandOne;
+        }
+    </script>
+</body>
+</html>
